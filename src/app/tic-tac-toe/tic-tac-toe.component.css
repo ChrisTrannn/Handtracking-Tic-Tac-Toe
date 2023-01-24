@@ -1,0 +1,48 @@
+#b1, #b2, #b3, #b4, #b5,
+#b6, #b7, #b8, #b9 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid dodgerblue;
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#print {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+#main {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1445px) {
+    #b1, #b2, #b3, #b4, #b5,
+    #b6, #b7, #b8, #b9 {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 1px solid gray;
+        font-size: 30px;
+        text-align: center;
+    }
+}

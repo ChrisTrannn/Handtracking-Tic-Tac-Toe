@@ -1,0 +1,19 @@
+<ul class="topnav">
+    <li routerLink=""><a>Home</a></li>
+    <li routerLink="/stats"><a class="active">Stats</a></li>
+</ul>
+
+<div class="container">
+    <div class="item1">
+        <h1>'x' Wins</h1>
+        <h4>{{ getXWinCount() }}</h4>
+    </div>
+    <div class="item2">
+        <h1>Ties</h1>
+        <h4> {{ getMatchTieCount() }} </h4>
+    </div>
+    <div class="item3">
+        <h1>'o' Wins</h1>
+        <h4> {{ getOWinCount() }} </h4>
+    </div>
+</div>

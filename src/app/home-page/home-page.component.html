@@ -1,0 +1,44 @@
+<ul class="topnav">
+    <li><a class="active">Home</a></li>
+    <li routerLink="/stats"><a>Stats</a></li>
+</ul>
+
+<h1>TIC TAC TOE</h1>
+
+<p id="ins">First Player starts as 
+    <b>Player X</b> 
+    And Second Player as 
+    <b>Player 0</b>
+</p>
+
+<div class="container">
+    <div class="item1">
+        <table>
+            <tr>
+                <td>Open Hand</td>
+                <td>Two Open Hands</td>
+                <td>Closed Hand</td>
+            </tr>
+            <tr>
+                <td>Two Closed Hands</td>
+                <td>Hand Pointing</td>
+                <td>Two Hands Pointing</td>
+            </tr>
+            <tr>
+                <td>One Closed Hand & One Hand Pointing</td>
+                <td>One Open Hand & One Closed Hand</td>
+                <td>One Open Hand & One Hand Pointing</td>
+            </tr>
+        </table>
+    </div>
+    <div class="item2">
+        <div class="videobox">
+            <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+        </div>
+
+        <div [innerHTML]="gesture"></div>
+    </div>
+    <div class="item3">
+        <app-tic-tac-toe [currGesture]="gesture"></app-tic-tac-toe>
+    </div>
+</div>
